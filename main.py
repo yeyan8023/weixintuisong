@@ -37,7 +37,7 @@ def get_birthday():
 
 
 def get_birthday_me():
-    return get_birthday() + 279
+    return get_birthday() + 59
 
 
 def get_words():
