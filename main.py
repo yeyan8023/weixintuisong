@@ -72,4 +72,8 @@ wm = WeChatMessage(client)
 data = {"love_days": {"value": get_count()},"ymd": {"value": dat.get('ymd')},"type": {"value": dat.get('type')},
         "birthday_left_me": {"value": get_birthday_me()},"high": {"value": dat.get('high')},
         "low": {"value": dat.get('low')}, "sunrise": {"value": dat.get('sunrise')},"week": {"value": dat.get('week')},
-        "sunset": {"value": dat.get('sunset')}, "fx": {"value": dat.g
+        "sunset": {"value": dat.get('sunset')}, "fx": {"value": dat.get('fx')}, "fl": {"value": dat.get('fl')},
+        "notice": {"value": dat.get('notice')},
+        "birthday_left": {"value": get_birthday()}, "words": {"value": get_words(), "color": get_random_color()}}
+res = wm.send_template(user_id, template_id, data)
+print(res)
