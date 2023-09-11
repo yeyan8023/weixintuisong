@@ -19,7 +19,7 @@ app_secret = os.environ["APP_SECRET"]
 user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
 
-rb = requests.get('http://t.weather.sojson.com/api/weather/city/101050101')
+rb = requests.get('http://t.weather.sojson.com/api/weather/city/1001161301')
 data = json.loads(rb.text)
 # 访问今天的天气情况
 dat=data['data']['forecast'][0]
